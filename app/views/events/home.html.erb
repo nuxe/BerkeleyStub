@@ -1,3 +1,94 @@
+<head>
+
+  <style type="text/css">
+body.modal-open #wrap{
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+    #preview-container{
+        border-top: 2px solid #CCC;
+        border-bottom: 2px solid #CCC;
+        width: 100%;
+        height: 500px;
+    }
+    .preview-iframe{
+        border:0;
+        width: 100%;
+    }
+    #playground-container{
+        height: 500px;
+    }
+    .playground-editor { 
+        border: 0;
+        padding: 0;
+        top: 0;
+        /*left: 0;*/
+        width: 100%;
+        height: 460px;
+        border: 2px solid #CCC;
+        border-radius:5px;
+        position: absolute !important;
+        display: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+  
+.modal-backdrop {background: #f7f7f7;}
+
+
+</style>
+
+    <script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/19624/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+  
+ <link rel="stylesheet" href="http://bootsnipp.com/css/bootsnipp.css?ver=15ca96027c93710f1c31c3be18b218de">
+    <link rel="stylesheet" href="http://bootsnipp.com/css/ladda-themeless.min.css">
+<style type="text/css">
+    #playground-container{
+        margin-top:10px; 
+        height:500px;
+        overflow:scroll;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    #preview-container{
+        border-top: 2px solid #CCC;
+        border-bottom: 2px solid #CCC;
+        width: 100%;
+        height: 100%;
+    }
+
+    .preview-iframe{
+        border:0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .playground-editor { 
+        border: 0;
+        padding: 0;
+        top: 0;
+        /*left: 0;*/
+        width: 100%;
+        height: 500px;
+        border: 2px solid #CCC;
+        border-radius:5px;
+        position: absolute !important;
+        display: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+</style>
+
+</head>
+
 <div class="row-fluid section" id="about">
           <div class="container"> 
 
@@ -36,26 +127,38 @@
         <tr>
           <td><%= event.name%></td>
           <td><%= event.date%></td>
-          <td><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          <td>
+
+
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Buy ticket
 </button>
 
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="container">
-    <div class="row">
+
       <div class="col-sm-6 col-sm-offset-3 text-center">
         <h1>Modal with blur effect</h1>
         <h2>Put here whatever you want here</h2>
+                <h2>Put here whatever you want here</h2>
+                        <h2>Put here whatever you want here</h2>
+        <h2>Put here whatever you want here</h2>
+        <h2>Put here whatever you want here</h2>
+        <h2>Put here whatever you want here</h2>
+        <h2>Put here whatever you want here</h2>
+        <h2>Put here whatever you want here</h2>
+
+
         <h4>For instance, a login form or an article content</h4>
         <h4><kbd>esc</kbd> or click anyway to close</h4>
         <hr>
         <div class="alert alert-info"><h4>I can add a close button if you want.<br>Please, tell me in comments :)</h4></div>
       </div>
     </div>
-  </div>
-</div></td>
+
+
+</td>
         </tr>
 
         <% end %>

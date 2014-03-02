@@ -3,6 +3,9 @@ BerkeleyStub::Application.routes.draw do
   root :to => 'events#home'
   match "events/createTicket", to: 'events#createTicket', via: 'get'
   match "events/addTicket", to: 'events#addTicket', via: 'post'
+
+
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
